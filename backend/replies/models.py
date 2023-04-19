@@ -1,12 +1,14 @@
 from django.db import models
 from authentication.models import User
+from comments.models import Comment
 
 # Create your models here.
 
 
-class Comment(models.Model):
+class Reply(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    video_id = models.CharField(max_length=15)
+    comment = models.ForeignKey(Comment, on_delete=models.CASCADE)
     text = models.CharField(max_length=255)
-    likes = models.IntegerField(default=0)
-    dislikes = models.IntegerField(default=0)
+
+    class Meta:
+        verbose_name_plural = "replies"
