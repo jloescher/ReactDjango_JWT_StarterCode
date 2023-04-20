@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./SearchField.css";
 
 const SearchBar = ({ handleSearch }) => {
   const [search, setSearch] = useState("");
@@ -9,7 +10,7 @@ const SearchBar = ({ handleSearch }) => {
     setSearch("");
   };
   return (
-    <form className="searchBar" onSubmit={handleSubmit}>
+    <form className="searchField" onSubmit={handleSubmit}>
       <label> Search For Videos{""}</label>
       <br />
       <input

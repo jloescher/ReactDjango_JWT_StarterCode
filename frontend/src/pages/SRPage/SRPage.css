@@ -1,0 +1,9 @@
+.searchGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.searchGrid .video-undefined {
+  flex: 1;
+}

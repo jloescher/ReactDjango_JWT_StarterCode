@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import "./CommentForm.css";
+import "./CommentForm.css";
 
 const CommentForm = ({ submitComment }) => {
   const [commentText, setCommentText] = useState("");

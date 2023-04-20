@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.vidCommentWrapper {
+  display: flex;
+  height: 100vh;
+  flex: 2;
+  flex-direction: column;
+  gap: 5rem;
+}
+.vidCommentWrapper .videoPlayer {
+}
+
+.vidCommentWrapper .commentList {
+}
+
+.videoList {
+  flex: 1;
+}

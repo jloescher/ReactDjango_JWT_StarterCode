@@ -9,7 +9,7 @@ import SearchField from "../../components/SearchField/SearchField";
 import VideoPage from "../VideoPage/VideoPage";
 import { YOUTUBE_API } from "../../localKey";
 
-function YouTubePage() {
+function HomePage() {
   const [videoResults, setVideoResults] = useState(hardData);
   const navigate = useNavigate();
 
@@ -39,7 +39,7 @@ function YouTubePage() {
   };
 
   useEffect(() => {
-    fetchResults("starwars");
+    fetchResults("xrp");
   }, []);
 
   
@@ -58,4 +58,4 @@ function YouTubePage() {
   );
 }
 
-export default YouTubePage;
+export default HomePage;

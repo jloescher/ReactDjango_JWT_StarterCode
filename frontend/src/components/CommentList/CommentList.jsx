@@ -27,7 +27,7 @@ const CommentList = ({ videoId }) => {
   const addComment = async (commentText) => {
     try {
       await axios.post(
-        `${HOST}/api/comments/`,
+        `${HOST}/api/comments/create/`,
         { video_id: videoId, text: commentText },
         {
           headers: {
