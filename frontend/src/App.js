@@ -11,6 +11,9 @@ import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import Navbar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 
+// Pages
+import YouTubePage from "./pages/YouTubePage/YouTubePage";
+
 // Util Imports
 import PrivateRoute from "./utils/PrivateRoute";
 
@@ -20,10 +23,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route
-          path="/"
+          path="/*"
           element={
             <PrivateRoute>
-              <HomePage />
+              <YouTubePage />
             </PrivateRoute>
           }
         />
