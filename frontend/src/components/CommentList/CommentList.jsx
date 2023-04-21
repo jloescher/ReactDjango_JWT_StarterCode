@@ -17,7 +17,7 @@ const CommentList = ({ videoId }) => {
 
   const fetchComments = async (videoId) => {
     try {
-      let response = await axios.get(`${HOST}/api/comments/${videoId}`);
+      let response = await axios.get(`${HOST}/api/comments/${videoId}/`);
       setComments(response.data);
     } catch (error) {
       console.log(error.message);
